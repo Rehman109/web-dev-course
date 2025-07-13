@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Web Development Course</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        body {
+    background: #111;
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;   
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    background: rgba(20,20,20,0.8);
+}
+
+.neon-title {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow:
+        0 0 10px #0ff,
+        0 0 20px #0ff,
+        0 0 40px #0ff,
+        0 0 80px #0ff,
+        0 0 160px #0ff;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    transition: color 0.2s, text-shadow 0.2s;   
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: #0ff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-shadow:
+        0 0 5px #0ff,
+        0 0 10px #0ff,
+        0 0 20px #0ff;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+
+.neon-link {
+    color: #ff00cc;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-shadow:
+        0 0 5px #ff00cc,
+        0 0 10px #ff00cc,
+        0 0 20px #ff00cc;
+    transition: color 0.2s;
+}
+
+.neon-link:hover {
+    color: #00ffea;
+    text-shadow:
+        0 0 10px #00ffea,
+        0 0 20px #00ffea;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(20,20,20,0.7);
+    border-radius: 20px;
+    box-shadow: 0 0 40px #0ff3, 0 0 10px #f0f;
+}
+
+.neon-section {
+    color: #39ff14;
+    text-shadow:
+        0 0 5px #39ff14,
+        0 0 10px #39ff14;
+    margin-top: 2rem;
+}
+
+.neon-text {
+    color: #fff;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #0ff;
+}
+
+.neon-list {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    color: #fff;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #f0f;
+}
+
+.neon-html {
+    color: #ffe600;
+    text-shadow: 0 0 10px #ff4d00, 0 0 20px #ff4d00;
+}
+
+.neon-css {
+    color: #ffe600;
+    text-shadow: 0 0 10px #00e1ff, 0 0 20px #00e1ff;
+}
+
+.neon-js {
+    color: #ffe600;
+    text-shadow: 0 0 10px #ffe600, 0 0 20px #ffe600;
+}
+
+.neon-label {
+    color: #ff00cc;
+    text-shadow: 0 0 5px #ff00cc;
+}
+
+input[type="text"], input[type="email"] {
+    background: #222;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: #fff;
+    margin: 0.5rem 0;
+    box-shadow: 0 0 5px #0ff;
+}
+
+.neon-button {
+    background: #0ff;
+    color: #111;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    transition: background 0.2s, color 0.2s;
+}
+
+.neon-button:hover {
+    background: #ff00cc;
+    color: #fff;
+    box-shadow: 0 0 20px #ff00cc, 0 0 40px #ff00cc;
+}
+
+.neon-footer {
+    text-align: center;
+    color: #00ffea;
+    text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea;
+    margin: 2rem 0 1rem 0;
+    font-size: 0.9rem;
+    padding: 1rem;
+    background: rgba(20,20,20,0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffea, 0
+    0 20px #00ffea;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+    </style>
+    <header>
+        <h1 class="neon-title">Web Development Course</h1>
+        <nav>
+            <ul>
+                <li><a class="neon-link" href="#about">About</a></li>
+                <li><a class="neon-link" href="#course">Course</a></li>
+                <li><a class="neon-link" href="#modules">Modules</a></li>
+                <li><a class="neon-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2 class="neon-section">About This Course</h2>
+            <p class="neon-text">Learn HTML, CSS, and JavaScript with glowing, interactive lessons!</p>
+        </section>
+        
+
+
+        <section id="course">
+            <h2 class="neon-section">Course</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+                <div>
+                    <h3 class="neon-html">video 1</h3>
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/l1EssrLxt7E?si=uUE6g6DpH5mtstR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-css">video 2</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rek0NWPCNOc?si=eU4qpRNAvQQW6KwS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 3</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2QR11oDukn4?si=uCnToEtrtVbTUNRm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 4</h3>
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/jRAZlTEZi9I?si=RI-PrQLOQWSFUlLO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 5</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/61ppyY5rUB0?si=Jn4ap7Sl6FbcudjH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                 </div>
+                 <div>
+                    <h3 class="neon-js">video 6</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/sqJ6xZ9mUwE?si=R2gDJMXn_CeyhKlS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 </div>
+                 <div>
+                    <h3 class="neon-js">video 7</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/4nC4VXHlys8?si=FkBodEOtw3-nSHf5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 </div>
+                 <div>
+                    <h3 class="neon-js">video 8</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/C01LeeMhwHc?si=xT5xjLrI4DDAftaX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 </div>
+                 <div>
+                    <h3 class="neon-js">video 9</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/wKPlQkOdpFQ?si=Kr4xAuPqlgYzQsE9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 </div>
+                 <div>
+                    <h3 class="neon-js">video 10</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/6Cpd63_WXdI?si=TWxckoQyKePU0qTu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 </div>
+                 <div>
+                    <h3 class="neon-js">video 11</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/bgKYobOXTZ0?si=nNnXhAzyyVMbTlga" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 </div>
+                <div>
+                    <h3 class="neon-js">video 12</h3>
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/l-EkcthUMl4?si=47S_-35AoggiWnyb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 13</h3>
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/p870o46o1bM?si=8cfbDWv7Q_k0LbNS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 14</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/2WMRDUS_b4E?si=y3dW9iCA0IrVQjwh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 15</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xpoWxFyGuC8?si=1498j3sF79DHOHGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 16</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/lcPs2BbbI_M?si=nw9p3Jyi2L2VfvEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 17</h3>
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/D_YpGeDy-i8?si=9sSnV01uvt7zQ3i_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 18</h3>
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/zts6uNVnCNs?si=3uzpyxM5pUqP99u2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 19</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OGkaHOD6CRU?si=q6cJ9IM-EdX3ZoHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 20</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hFvf0iPOjT8?si=22fS4E_xj55AdMcV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 21</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eKtwlzRyuIc?si=YBRaOo4AireZwrGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 22</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xBSlwwitD5U?si=F86z5WIWUjmm3OOZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 23</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8imJZHgf44E?si=tbQo9kx_36CQSQDF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div> 
+                <div>
+                    <h3 class="neon-js">video 24</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/KhPJ5xF4gIk?si=wkfkejNG283_LFBs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 25</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Xdhdgl0Ju4k?si=TPJTvc5245-FTaZi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 26</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IZa8pbR8CWs?si=nkQOhtw_lCGScvsX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 27</h3>
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ywK_wgQwKJY?si=BbOUIFkGjexrkTXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 28</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DUiYVJIVNcA?si=Pol3o1Ew_xZ_UDgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 29</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ddWKdSS5TaQ?si=xfZeTPlfhDbSb8Zh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 30</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/5NxYn0GiApg?si=nlSdZ64sBeMA88J4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 31</h3>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/IwlAhfeSnp8?si=9u5kmcfQo_vp0N_j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 32</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/B7wHpNUUT4Y?si=CEe5qyLeY6G_TXPW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 33</h3>
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/j8fubBAFq_I?si=deS70eShE73JkXbd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                </div>
+                <div>
+                    <h3 class="neon-js">video 34</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2lRQTdpwhFk?si=vZaNnpwWdBpUy4U8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 35</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hRaDYCHqFQQ?si=W9fDBET8RLMKN7Z3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 36</h3>
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/zSt-KI0HryY?si=mNLa_YF-TAJLOs27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 37</h3>
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/0b1k2d7a9e4?si=6c8f5gXQjYx4J2nE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 38</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/VsEfh-EqNT8?si=L4gE_B0F3NwA-YtS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 39</h3>
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7xgJmIOG8GE?si=xrCkjP3lpPlEzu9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 40</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5kY4Th53w70?si=ViN2G1Z0qxYE3gip" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 41</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0hQPN4OQgU4?si=gwFbz1_uVDntK8TX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 42</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/vCZqAriaPZw?si=A7-PhonvFB87mRTT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 43</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/vldRjjbcRXc?si=qEgFFzVcnpPzZVN6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 44</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4RjmmZnDFVA?si=4O6K6-NhU_UDWndu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 45</h3>
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/LgZZLeWKGsI?si=Rvd0jSbXXLe4a8XU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 46</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xw0J0v3Zkuo?si=XYPv6PKWnI_cd4N5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 47</h3>
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/0QSSUHTJ-sU?si=ZRlx6ncKTeYC5D74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 48</h3>
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/QrFYRTcKXAU?si=NjGbciDj9UVD33Z0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 49</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XrAyzuNanZo?si=P0KIhui5Waf4RZd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 50</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/GXONlNAnmNU?si=pD73R-2uD6iIjnT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 51</h3>
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7n8kPBPzy5I?si=kguTSUX4VSAn455w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 52</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/101q0HoCDKs?si=vruydxnJKpPvVlPD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 53</h3>
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/aHPK2rsonZA?si=ls9QePU10A7xBpje" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 54</h3>
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/4ZSL8_zlq9Y?si=Sl7K7kKNMJdMW5zA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>   
+                    <h3 class="neon-js">video 55</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fYR3i0mcE5c?si=7s8PNB1JBbXksWA1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 56</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XuGaq24wixg?si=c6TxZFXT4rDFD0r4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="neon-js">video 57</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Dm0K3x9yCkg?si=isFryCmlQJ3NZ3kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+        </div>
+        <section id="modules">
+            <h2 class="neon-section">Course Modules</h2>
+            <ul>
+                <li class="neon-list">Introduction to <span class="neon-html">HTML</span></li>
+                <li class="neon-list">Styling with <span class="neon-css">CSS</span></li>
+                <li class="neon-list">JavaScript <span class="neon-js">Basics</span></li>
+            </ul>
+        </section>
+               <section id="contact">
+            <h2 class="neon-section">Contact</h2>
+            <div style="margin-bottom: 1rem;">
+                <label class="neon-label">Phone:</label>
+                <span class="neon-text">03259656152</span>
+            </div>
+            <div style="margin-bottom: 1rem;">
+                <label class="neon-label">Email:</label>
+                <span class="neon-text">hideboy12345@email.com</span>
+            </div>
+            <a 
+                href="https://wa.me/+923259656152" 
+                target="_blank" 
+                class="neon-button" 
+                style="display:inline-block;text-align:center;text-decoration:none;margin-top:1rem;">
+                Chat on WhatsApp
+            </a>
+        </section>
+                
+            </section>
+    </main>
+    <footer>
+        <p class="neon-footer">&copy; 2025 Web Development Course</p>
+    </footer>
+</body>
+</html>

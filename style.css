@@ -1,0 +1,147 @@
+body {
+    background: #111;
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+}
+
+.neon-title {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow:
+        0 0 10px #0ff,
+        0 0 20px #0ff,
+        0 0 40px #0ff,
+        0 0 80px #0ff,
+        0 0 160px #0ff;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.neon-link {
+    color: #ff00cc;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-shadow:
+        0 0 5px #ff00cc,
+        0 0 10px #ff00cc,
+        0 0 20px #ff00cc;
+    transition: color 0.2s;
+}
+
+.neon-link:hover {
+    color: #00ffea;
+    text-shadow:
+        0 0 10px #00ffea,
+        0 0 20px #00ffea;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(20,20,20,0.7);
+    border-radius: 20px;
+    box-shadow: 0 0 40px #0ff3, 0 0 10px #f0f;
+}
+
+.neon-section {
+    color: #39ff14;
+    text-shadow:
+        0 0 5px #39ff14,
+        0 0 10px #39ff14;
+    margin-top: 2rem;
+}
+
+.neon-text {
+    color: #fff;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #0ff;
+}
+
+.neon-list {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    color: #fff;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #f0f;
+}
+
+.neon-html {
+    color: #ff4d00;
+    text-shadow: 0 0 10px #ff4d00, 0 0 20px #ff4d00;
+}
+
+.neon-css {
+    color: #00e1ff;
+    text-shadow: 0 0 10px #00e1ff, 0 0 20px #00e1ff;
+}
+
+.neon-js {
+    color: #ffe600;
+    text-shadow: 0 0 10px #ffe600, 0 0 20px #ffe600;
+}
+
+.neon-label {
+    color: #ff00cc;
+    text-shadow: 0 0 5px #ff00cc;
+}
+
+input[type="text"], input[type="email"] {
+    background: #222;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: #fff;
+    margin: 0.5rem 0;
+    box-shadow: 0 0 5px #0ff;
+}
+
+.neon-button {
+    background: #0ff;
+    color: #111;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    transition: background 0.2s, color 0.2s;
+}
+
+.neon-button:hover {
+    background: #ff00cc;
+    color: #fff;
+    box-shadow: 0 0 20px #ff00cc, 0 0 40px #ff00cc;
+}
+
+.neon-footer {
+    text-align: center;
+    color: #00ffea;
+    text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea;
+    margin: 2rem 0 1rem 0; 
+    font-size: 0.9rem;
+    padding: 1rem;
+    background: rgba(20,20,20,0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea;
+    transition: color 0.2s, text-shadow 0.2s;
+}
